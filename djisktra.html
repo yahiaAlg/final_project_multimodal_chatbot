@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Line Graph</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: #626262;
+      }
+      canvas {
+        border: 1px solid rgb(0, 0, 0);
+        background: rgb(54, 11, 11);
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="graphCanvas" width="400" height="300"></canvas>
+
+    <script>
+      /**
+       * Implements Dijkstra's algorithm to find the shortest path in an undirected graph.
+       *
+       * @param {Object} graph - An object representing the adjacency list of a graph, where keys are node identifiers and values are arrays of objects with properties 'node', 'weight'.
+       * @param {string} startNode - The identifier of the starting node for path calculation.
+       * @returns {Object} A map containing each node as key and its shortest path predecessor node as value.
+       */
+      function dijkstraShortestPath(graph, startNode) {
+        const distances = {};
+        const predecessors = {}; // Store shortest path predecessors
+        const visitedNodes = new Set();
+
+        Object.keys(graph).forEach((node) => {
+          distances[node] = Infinity;
+          predecessors[node] = null; // Initialize predecessors
+        });
+
+        distances[startNode] = 0;
+
+        function getClosestUnvisitedNode() {
+          return Array.from(Object.keys(distances)).reduce((closest, node) => {
+            if (
+              !visitedNodes.has(node) &&
+              (!closest || distances[node] < closest.distance)
+            ) {
+              return { node, distance: distances[node] };
+            }
+            return closest;
+          }, null);
+        }
+
+        while (true) {
+          const closestNode = getClosestUnvisitedNode();
+          if (!closestNode || distances[closestNode.node] === Infinity) break;
+
+          visitedNodes.add(closestNode.node);
+
+          const edges = graph[closestNode.node];
+          for (const edge of edges) {
+            if (!visitedNodes.has(edge.node)) {
+              const newDistance = distances[closestNode.node] + edge.weight;
+              if (newDistance < distances[edge.node]) {
+                distances[edge.node] = newDistance;
+                predecessors[edge.node] = closestNode.node; // Update predecessor
+              }
+            }
+          }
+        }
+
+        return predecessors; // Return predecessors for shortest path reconstruction
+      }
+
+      /**
+       * Draws a basic representation of the graph with nodes, edges, and edge weights,
+       * highlighting the shortest path.
+       *
+       * @param {Object} graph - The graph data structure (adjacency list).
+       * @param {number} canvasWidth - The width of the canvas.
+       * @param {number} canvasHeight - The height of the canvas.
+       * @param {Object} shortestPath - A map of nodes and their predecessors in the shortest path.
+       */
+      function drawGraph(graph, canvasWidth, canvasHeight, shortestPath) {
+        const canvas = document.getElementById("graphCanvas");
+        const ctx = canvas.getContext("2d");
+        const nodeRadius = 20;
+
+        const nodePositions = {};
+        const numNodes = Object.keys(graph).length;
+        const centerX = canvasWidth / 2;
+        const centerY = canvasHeight / 2;
+        const radius = Math.min(centerX, centerY) * 0.8;
+
+        let angle = 0;
+        const angleIncrement = (2 * Math.PI) / numNodes;
+
+        // Calculate node positions
+        for (const node in graph) {
+          const x = centerX + radius * Math.cos(angle);
+          const y = centerY + radius * Math.sin(angle);
+          nodePositions[node] = { x, y };
+          angle += angleIncrement;
+        }
+
+        // Draw edges and edge weights, highlighting shortest path edges
+        for (const node in graph) {
+          const edges = graph[node];
+          for (const edge of edges) {
+            const start = nodePositions[node];
+            const end = nodePositions[edge.node];
+
+            // Check if this edge is part of the shortest path
+            const isShortestPathEdge =
+              shortestPath[edge.node] === node ||
+              shortestPath[node] === edge.node;
+
+            // Draw edge
+            ctx.beginPath();
+            ctx.moveTo(start.x, start.y);
+            ctx.lineTo(end.x, end.y);
+            // Highlight shortest path edges
+            ctx.strokeStyle = isShortestPathEdge ? "green" : "white";
+            ctx.lineWidth = isShortestPathEdge ? 3 : 1;
+            ctx.stroke();
+
+            // Calculate edge label position
+            const labelX = (start.x + end.x) / 2;
+            const labelY = (start.y + end.y) / 2;
+
+            // Draw edge weight label
+            ctx.fillStyle = "white";
+            ctx.textAlign = "center";
+            ctx.textBaseline = "middle";
+            ctx.fillText(edge.weight, labelX, labelY);
+          }
+        }
+
+        // Draw nodes on top of edges
+        for (const node in graph) {
+          const { x, y } = nodePositions[node];
+          ctx.beginPath();
+          ctx.arc(x, y, nodeRadius, 0, 2 * Math.PI);
+          ctx.fillStyle = "lightblue";
+          ctx.fill();
+          ctx.stroke();
+          ctx.fillStyle = "black";
+          ctx.textAlign = "center";
+          ctx.textBaseline = "middle";
+          ctx.fillText(node, x, y);
+        }
+      }
+
+      const graphData = {
+        A: [
+          { node: "B", weight: 1 },
+          { node: "C", weight: 4 },
+        ],
+        B: [
+          { node: "A", weight: 1 },
+          { node: "C", weight: 2 },
+          { node: "D", weight: 5 },
+        ],
+        C: [
+          { node: "A", weight: 4 },
+          { node: "B", weight: 2 },
+          { node: "D", weight: 1 },
+        ],
+        D: [
+          { node: "B", weight: 5 },
+          { node: "C", weight: 1 },
+        ],
+      };
+
+      const startNode = "A";
+      const shortestPath = dijkstraShortestPath(graphData, startNode);
+      console.log(shortestPath);
+
+      // Driver code to draw the graph using the provided function
+      const canvas = document.getElementById("graphCanvas");
+      if (canvas) {
+        const ctx = canvas.getContext("2d");
+        drawGraph(graphData, canvas.width, canvas.height, shortestPath);
+      } else {
+        console.error("Canvas element not found!");
+      }
+    </script>
+  </body>
+</html>

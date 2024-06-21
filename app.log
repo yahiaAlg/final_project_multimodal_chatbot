@@ -1,0 +1,262 @@
+2024-06-14 01:42:35,153 - __main__ - INFO - Zipping movies and ratings...
+2024-06-14 01:42:35,164 - __main__ - INFO - finished dumping:
+{
+  "MoviesWithRatings": [
+    [
+      "The Shawshank Redemption",
+      9.3
+    ],
+    [
+      "The Godfather",
+      9.2
+    ],
+    [
+      "The Dark Knight",
+      9.0
+    ],
+    [
+      "Pulp Fiction",
+      8.9
+    ],
+    [
+      "Fight Club",
+      8.8
+    ],
+    [
+      "Forrest Gump",
+      8.8
+    ],
+    [
+      "Inception",
+      8.7
+    ],
+    [
+      "Interstellar",
+      8.6
+    ],
+    [
+      "The Matrix",
+      8.5
+    ],
+    [
+      "Goodfellas",
+      8.4
+    ]
+  ]
+}
+2024-06-14 01:43:13,408 - __main__ - INFO - Zipping movies and ratings...
+2024-06-14 01:43:13,408 - __main__ - INFO - Zipping movies and ratings...
+2024-06-14 01:43:13,414 - __main__ - INFO - finished dumping:
+{
+  "MoviesWithRatings": [
+    [
+      "The Shawshank Redemption",
+      9.3
+    ],
+    [
+      "The Godfather",
+      9.2
+    ],
+    [
+      "The Dark Knight",
+      9.0
+    ],
+    [
+      "Pulp Fiction",
+      8.9
+    ],
+    [
+      "Fight Club",
+      8.8
+    ],
+    [
+      "Forrest Gump",
+      8.8
+    ],
+    [
+      "Inception",
+      8.7
+    ],
+    [
+      "Interstellar",
+      8.6
+    ],
+    [
+      "The Matrix",
+      8.5
+    ],
+    [
+      "Goodfellas",
+      8.4
+    ]
+  ]
+}
+2024-06-14 01:43:13,414 - __main__ - INFO - finished dumping:
+{
+  "MoviesWithRatings": [
+    [
+      "The Shawshank Redemption",
+      9.3
+    ],
+    [
+      "The Godfather",
+      9.2
+    ],
+    [
+      "The Dark Knight",
+      9.0
+    ],
+    [
+      "Pulp Fiction",
+      8.9
+    ],
+    [
+      "Fight Club",
+      8.8
+    ],
+    [
+      "Forrest Gump",
+      8.8
+    ],
+    [
+      "Inception",
+      8.7
+    ],
+    [
+      "Interstellar",
+      8.6
+    ],
+    [
+      "The Matrix",
+      8.5
+    ],
+    [
+      "Goodfellas",
+      8.4
+    ]
+  ]
+}
+
+2024-06-14 02:05:24,761 - __main__ - INFO - Bubble sort completed on a list with 10 items
+2024-06-14 02:05:24,761 - __main__ - INFO - Bubble sort completed on a list with 10 items
+2024-06-14 02:05:38,451 - __main__ - INFO - Bubble sort completed on a list with 10 items
+2024-06-14 02:05:38,451 - __main__ - INFO - Bubble sort completed on a list with 10 items
+2024-06-18 23:01:43,156 - __main__ - ERROR - File not found: C:\Users\Yahia\Desktop\Gradio_Guide\alerts.pdf
+2024-06-18 23:02:49,296 - __main__ - INFO - Processed page 1
+2024-06-18 23:02:49,296 - __main__ - INFO - Processed page 1
+2024-06-18 23:02:49,296 - __main__ - ERROR - An unexpected error occurred while extracting text from the PDF file
+Traceback (most recent call last):
+  File "C:\Users\Yahia\AppData\Local\Temp\ipykernel_10632\1099141519.py", line 40, in extract_text_from_pdf
+    pdf_content.write(text)
+  File "C:\Users\Yahia\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 3-9: character maps to <undefined>
+2024-06-18 23:02:49,296 - __main__ - ERROR - An unexpected error occurred while extracting text from the PDF file
+Traceback (most recent call last):
+  File "C:\Users\Yahia\AppData\Local\Temp\ipykernel_10632\1099141519.py", line 40, in extract_text_from_pdf
+    pdf_content.write(text)
+  File "C:\Users\Yahia\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 3-9: character maps to <undefined>
+2024-06-18 23:03:08,867 - __main__ - ERROR - An unexpected error occurred while extracting text from the PDF file
+Traceback (most recent call last):
+  File "C:\Users\Yahia\AppData\Local\Temp\ipykernel_10632\2754274936.py", line 29, in extract_text_from_pdf
+    with open(file_path, "rb", encoding="utf-8") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Yahia\Desktop\gradio_project\.venv\Lib\site-packages\IPython\core\interactiveshell.py", line 324, in _modified_open
+    return io_open(file, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: binary mode doesn't take an encoding argument
+2024-06-18 23:03:08,867 - __main__ - ERROR - An unexpected error occurred while extracting text from the PDF file
+Traceback (most recent call last):
+  File "C:\Users\Yahia\AppData\Local\Temp\ipykernel_10632\2754274936.py", line 29, in extract_text_from_pdf
+    with open(file_path, "rb", encoding="utf-8") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Yahia\Desktop\gradio_project\.venv\Lib\site-packages\IPython\core\interactiveshell.py", line 324, in _modified_open
+    return io_open(file, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: binary mode doesn't take an encoding argument
+2024-06-18 23:03:08,867 - __main__ - ERROR - An unexpected error occurred while extracting text from the PDF file
+Traceback (most recent call last):
+  File "C:\Users\Yahia\AppData\Local\Temp\ipykernel_10632\2754274936.py", line 29, in extract_text_from_pdf
+    with open(file_path, "rb", encoding="utf-8") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Yahia\Desktop\gradio_project\.venv\Lib\site-packages\IPython\core\interactiveshell.py", line 324, in _modified_open
+    return io_open(file, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: binary mode doesn't take an encoding argument
+2024-06-18 23:04:25,588 - __main__ - INFO - Processed page 1
+2024-06-18 23:04:25,588 - __main__ - INFO - Processed page 1
+2024-06-18 23:04:25,588 - __main__ - INFO - Processed page 1
+2024-06-18 23:04:25,588 - __main__ - INFO - Processed page 1
+2024-06-18 23:04:25,596 - __main__ - ERROR - An unexpected error occurred while extracting text from the PDF file
+Traceback (most recent call last):
+  File "C:\Users\Yahia\AppData\Local\Temp\ipykernel_10632\1488064527.py", line 37, in extract_text_from_pdf
+    print(str(text,encoding="utf-8"))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: decoding str is not supported
+2024-06-18 23:04:25,596 - __main__ - ERROR - An unexpected error occurred while extracting text from the PDF file
+Traceback (most recent call last):
+  File "C:\Users\Yahia\AppData\Local\Temp\ipykernel_10632\1488064527.py", line 37, in extract_text_from_pdf
+    print(str(text,encoding="utf-8"))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: decoding str is not supported
+2024-06-18 23:04:25,596 - __main__ - ERROR - An unexpected error occurred while extracting text from the PDF file
+Traceback (most recent call last):
+  File "C:\Users\Yahia\AppData\Local\Temp\ipykernel_10632\1488064527.py", line 37, in extract_text_from_pdf
+    print(str(text,encoding="utf-8"))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: decoding str is not supported
+2024-06-18 23:04:25,596 - __main__ - ERROR - An unexpected error occurred while extracting text from the PDF file
+Traceback (most recent call last):
+  File "C:\Users\Yahia\AppData\Local\Temp\ipykernel_10632\1488064527.py", line 37, in extract_text_from_pdf
+    print(str(text,encoding="utf-8"))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: decoding str is not supported
+2024-06-18 23:04:41,208 - __main__ - INFO - Processed page 1
+2024-06-18 23:04:41,208 - __main__ - INFO - Processed page 1
+2024-06-18 23:04:41,208 - __main__ - INFO - Processed page 1
+2024-06-18 23:04:41,208 - __main__ - INFO - Processed page 1
+2024-06-18 23:04:41,208 - __main__ - INFO - Processed page 1
+2024-06-18 23:04:41,214 - __main__ - ERROR - An unexpected error occurred while extracting text from the PDF file
+Traceback (most recent call last):
+  File "C:\Users\Yahia\AppData\Local\Temp\ipykernel_10632\3925008829.py", line 40, in extract_text_from_pdf
+    pdf_content.write(text)
+  File "C:\Users\Yahia\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 3-9: character maps to <undefined>
+2024-06-18 23:04:41,214 - __main__ - ERROR - An unexpected error occurred while extracting text from the PDF file
+Traceback (most recent call last):
+  File "C:\Users\Yahia\AppData\Local\Temp\ipykernel_10632\3925008829.py", line 40, in extract_text_from_pdf
+    pdf_content.write(text)
+  File "C:\Users\Yahia\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 3-9: character maps to <undefined>
+2024-06-18 23:04:41,214 - __main__ - ERROR - An unexpected error occurred while extracting text from the PDF file
+Traceback (most recent call last):
+  File "C:\Users\Yahia\AppData\Local\Temp\ipykernel_10632\3925008829.py", line 40, in extract_text_from_pdf
+    pdf_content.write(text)
+  File "C:\Users\Yahia\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 3-9: character maps to <undefined>
+2024-06-18 23:04:41,214 - __main__ - ERROR - An unexpected error occurred while extracting text from the PDF file
+Traceback (most recent call last):
+  File "C:\Users\Yahia\AppData\Local\Temp\ipykernel_10632\3925008829.py", line 40, in extract_text_from_pdf
+    pdf_content.write(text)
+  File "C:\Users\Yahia\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 3-9: character maps to <undefined>
+2024-06-18 23:04:41,214 - __main__ - ERROR - An unexpected error occurred while extracting text from the PDF file
+Traceback (most recent call last):
+  File "C:\Users\Yahia\AppData\Local\Temp\ipykernel_10632\3925008829.py", line 40, in extract_text_from_pdf
+    pdf_content.write(text)
+  File "C:\Users\Yahia\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 3-9: character maps to <undefined>
