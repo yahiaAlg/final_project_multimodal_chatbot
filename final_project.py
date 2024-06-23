@@ -438,7 +438,7 @@ def bot_logic(
                     safety_checker=None,
                 )
                 pipe = pipe.to("cuda")
-                pipe.safety_checker = None
+                pipe.safety_checker = True
                 pipe.requires_safety_checker = False
                 model_id_info["downloaded"] = True  # type: ignore
                 if not model_id_info["downloaded"]:  # type: ignore
