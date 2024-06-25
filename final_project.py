@@ -159,26 +159,6 @@ model_ids = {
     "Mix": {"name": "emilianJR/majicMIX_realistic_v6", "downloaded": False},
     "Best SDXL": {"name": "RunDiffusion/Juggernaut-XL-v9", "downloaded": False},
 }
-# model_id = "stabilityai/stable-diffusion-3-medium-diffusers"
-# model_id = "emilianJR/majicMIX_realistic_v6"
-# text_encoder = T5EncoderModel.from_pretrained(
-#     model_id,
-#     subfolder="text_encoder_3",
-#     quantization_config=quantization_config,
-# )
-# pipe = StableDiffusion3Pipeline.from_pretrained(
-# pipe = StableDiffusionPipeline.from_pretrained(
-#     model_id,
-#     safety_checker=None,
-#     # text_encoder_3=text_encoder,
-#     # device_map="balanced",
-#     torch_dtype=torch.float16,
-# )
-
-# using a tiny variational auto encoder for instant latent space into pixel space decode
-# pipe.vae = AutoencoderTiny.from_pretrained("madebyollin/taesd3", torch_dtype=torch.float16)
-# pipe.vae.config.shift_factor = 0.0
-
 
 # WORKFLOWS ACRONYMS
 workflows_endonyms = {
