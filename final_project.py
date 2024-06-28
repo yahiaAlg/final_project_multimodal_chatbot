@@ -683,7 +683,7 @@ Additional notes: You may use emojis or other non-verbal cues to enhance the con
                                             )
                                             history_ollama_format.append(
                                                 {
-                                                    "role": "ai",
+                                                    "role": "assistant",
                                                     "content": f"{ai if type(ai) == str else 'some media content'}",
                                                 }
                                             )
