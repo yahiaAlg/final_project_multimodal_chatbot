@@ -270,8 +270,10 @@ Note that this is a simplified example. For best results, you would need:
 
 Also, remember that the performance of this classifier heavily depends on the quality and quantity of the training data. The more diverse and numerous the examples in your training set, the better the model will perform on new, unseen prompts..
 
+```json
 [
-{"prompt":<prompt>,"classification":<classification>}, # 01th prompt
-....
-{"prompt":<prompt>,"classification":<classification>}, # nth prompt
+    {"prompt":<prompt>,"classification":<classification>}, # 01th prompt
+    ....
+    {"prompt":<prompt>,"classification":<classification>}, # nth prompt
 ]
+```
