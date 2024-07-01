@@ -1282,7 +1282,7 @@ Slide 4: Conclusion and Demo Trailer
 
 <speech vocalist="yahia">
 Content:
-As we conclude our presentation on the Modality Switching Mechanism, we invite you to witness the power of this technology in action. Our system represents a significant step forward in creating more intuitive and versatile AI interactions, bridging the gap between different content modalities seamlessly.
+As we conclude our presentation, we invite you to witness the power of this technology in action. Our system represents a significant step forward in creating more intuitive and versatile AI interactions, bridging the gap between different content modalities.
 
 We've prepared a short trailer that showcases how our system generates diverse content types, demonstrating the fluid transition between text, images, and audio. This video will give you a glimpse into the future of AI-driven content creation and interaction.
 
