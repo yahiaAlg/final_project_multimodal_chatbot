@@ -154,7 +154,7 @@ Speech 1: Historical Brief of AI and LLMs
 
 A pivotal moment came in 2017 with the introduction of the Transformer architecture, revolutionizing natural language processing. This led to powerful models like BERT and GPT. Recent years have witnessed the emergence of Large Language Models, exemplified by GPT-3 and ChatGPT, which have brought AI capabilities to the mainstream.
 
-This journey from rule-based systems to today's sophisticated language models represents decades of innovation, setting the stage for the next frontier in AI: truly multimodal systems."
+"
 </speech >
 
 ---
@@ -162,7 +162,7 @@ This journey from rule-based systems to today's sophisticated language models re
 Slide 6: The Next Frontier - Multimodal LLMs and the Path to AGI
 
 Title: Bridging to the Future: MM-LLMs and AGI
-
+junction
 The rapid evolution of AI, from early rule-based systems to today's large language models, has set the stage for the next leap forward: Multimodal Large Language Models (MM-LLMs). Our proposed MM-LLM project aims to push the boundaries even further by seamlessly integrating multiple modalities - text, image, audio, and potentially video - into a single, cohesive AI system.
 
 This integration represents a crucial step towards Artificial General Intelligence (AGI):
@@ -239,10 +239,16 @@ Here are interesting real-world applications of multimodal LLMs in various secto
 - Generates personalized investment advice with supporting charts and graphs
 - Offers real-time market insights by processing news articles, images, and financial data feeds
 
-<speech>
+<speech vocalist="oussama">
 "The applications are diverse and transformative. In education, we envision AI tutors providing personalized, multi-format learning experiences. In healthcare, diagnostic assistants could analyze various data types for comprehensive insights. Creative fields could see AI-generated multimedia content, while in scientific research, it could help analyze complex, diverse datasets.
 
 These applications leverage the multimodal capabilities of advanced LLMs to provide more intuitive, comprehensive, and efficient solutions across various industries, enhancing user experiences and productivity.
+</speech>
+
+---
+
+<speech vocalist="yahia">
+"Having explored the revolutionary potential of Multimodal Large Language Models in bridging the gap between text and visual understanding, let's now delve into the core components that make these advancements possible. At the heart of MMLLMs lie two powerful technologies: Large Language Models (LLMs) and Diffusion Models. LLMs provide the foundation for sophisticated text processing and generation, while Diffusion Models excel in high-quality image generation and manipulation. Understanding these key components is crucial as they form the backbone of content generator ability to seamlessly integrate and process multiple modalities. Let's examine each of these technologies in turn, starting with Large Language Models."
 </speech>
 
 ---
